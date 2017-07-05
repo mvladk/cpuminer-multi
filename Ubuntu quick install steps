@@ -13,6 +13,7 @@ sudo apt install gcc make
 sudo apt-get install libcurl4-gnutls-dev
 
 ./autogen.sh
+./configure
 
 make
 screen -S xmr
