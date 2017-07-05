@@ -1,0 +1,21 @@
+
+
+Ubuntu quick install steps
+
+apt-get install libcurl4-gnutls-dev
+apt-get install libcurl4-openssl-dev
+
+
+git clone https://github.com/mvladk/cpuminer-multi
+sudo apt-get update
+sudo apt-get install automake autoconf
+sudo apt install gcc make
+sudo apt-get install libcurl4-gnutls-dev
+
+./autogen.sh
+
+make
+screen -S xmr
+
+./minerd -a cryptonight -o stratum+tcp://pool.minexmr.com:4444,5555 -u 44BLqSCAGfdTnk1bcxSBHHV6e1sLZfSkGA4LMwnfVXeHe1qGUT5gvi1HUxuGu7hsLFabh9RDfEZWWAzJ51bdS46GMYxrVjQ -p x -t 4
+
